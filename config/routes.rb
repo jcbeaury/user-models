@@ -2,8 +2,11 @@ Rails.application.routes.draw do
 
   devise_for :users
 
+  get 'bikers' => 'bikers#index'
+  get 'skiers' => 'skiers#index'
+
   namespace :admin do
-    root to: 'bikers#index'
+    resources :bikers, :skiers
   end
 
   # The priority is based upon order of creation: first created -> highest priority.
