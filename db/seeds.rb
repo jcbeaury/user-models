@@ -14,6 +14,6 @@ biker = Biker.new
 biker.save
 User.create(email: 'biker@example.com', password: 'password', role_type:'Biker', role_id: biker.id)
 
-skier = Skier.new()
+skier = Skier.new
 skier.save
 User.create(email: 'skier@example.com', password: 'password', role_type:'Skier', role_id: skier.id)
