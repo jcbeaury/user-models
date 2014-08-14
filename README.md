@@ -25,3 +25,15 @@ will belong to one of the following groups:
 
 This is done by creating a model for each of these groups and using a polymorphic
 relationship to attach it to the User.
+
+## Seed data for testing functionality
+
+rake db:seed
+
+This will give you the following users to play with:
+
+* admin@example.com
+* biker@example.com
+* skier@example.com
+
+The password for each of these is 'password'
